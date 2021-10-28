@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practic1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="318" Width="348">
+        Title="MainWindow" Height="318" Width="348" ResizeMode="CanMinimize">
     <Grid>
         <TextBox x:Name="allRandomNumbers" HorizontalAlignment="Left" Margin="10,45,0,0" Text="" TextWrapping="Wrap" Width="192" IsReadOnly="True" Height="223" VerticalAlignment="Top" />
         <TextBox x:Name="enterMinSumOfNumbers" HorizontalAlignment="Left" Margin="228,45,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Height="18" TextChanged="enterMinSumOfNumbers_TextChanged" >
