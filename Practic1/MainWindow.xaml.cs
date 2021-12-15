@@ -34,14 +34,12 @@ namespace Practic1
             
             
             
-            bool isNotError = Int32.TryParse(enterMinSumOfNumbers.Text, out int minSumOfNumbers);
-            if (isNotError && minSumOfNumbers < 0)
+            try
             {
                 string allNumbers = string.Empty;
                 int counter;
                 int sumNum;
-
-                minSumOfNumbers = Convert.ToInt32(enterMinSumOfNumbers.Text);
+                int minSumOfNumbers = Convert.ToInt32(enterMinSumOfNumbers.Text);
 
                 Practice.randomNumber(minSumOfNumbers, out counter, out sumNum, out allNumbers);
 
@@ -49,7 +47,7 @@ namespace Practic1
                 numberCounter.Text = counter.ToString();
                 endSumOfNumbers.Text = sumNum.ToString();
             }
-            else
+            catch
             {
                 MessageBox.Show("Число введено неверное или оно не отрицательное. \nВведите другое значение.", "Ошибка");
                 enterMinSumOfNumbers.Clear();
